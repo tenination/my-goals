@@ -3,24 +3,39 @@ var db = require('./db');
 var Goal = {};
 
 // TODO: ADD MORE MODEL FUNCTIONS HERE
-
-Goal.addGoal = function(goal) {
-	return db('goals').insert({user_id: goal.user_id, description: goal.description, completed:goal.completed})
-		.then(function() {
-			console.log('Goal added!')
-		})
-		.catch(function(err) {
-			console.error(err)
-		});
+Goal.getAllGoals = function(callback) {
+	return db.select('id', 'description').table('goals')
+	.then(function(data) {
+		console.log('All goals in database retrieved!');
+		callback(data);
+	})
+	.catch(function(err) {
+		console.error(err);
+		callback(err);
+	});
 };
 
-Goal.getGoal = function(goalId) {
-	return db('goals').where('id', goalId)
-		.then(function() {
-			console.log('Goal retrieved')
+Goal.addGoal = function(goal, callback) {
+	return db('goals').insert({user_id: goal.user_id, description: goal.description, completed:goal.completed})
+		.then(function(data) {
+			console.log('Goal added!', data);
+			callback(data)
 		})
 		.catch(function(err) {
 			console.error(err);
+			callback(err);
+		});
+};
+
+Goal.getGoal = function(goalId, callback) {
+	return db('goals').where('id', goalId)
+		.then(function(data) {
+			console.log('Goal retrieved');
+			callback(data);
+		})
+		.catch(function(err) {
+			console.error(err);
+			callback(err);
 		});
 };
 

@@ -1,5 +1,7 @@
 var router = require('express').Router();
 var jwt = require('jwt-simple'); // for encoding and decoding tokens
+var goal = require('./models/goal');
+var user = require('./models/user');
 
 // TODO: ATTACH ROUTE HANDLERS
   // See 2-complete-routes/README.md for which routes you should implement first.
@@ -14,6 +16,30 @@ router.post('/signup', function() {
     // If taken, send a 409 status code
     // If available, hash the password and store it in the database
       // Send back a 201
+});
+
+router.get('/goals', function(req, res) {
+
+  goal.getAllGoals(function(result) {
+    res.json(result);
+  });
+
+});
+
+router.get('/goals/:id', function(req, res) {
+  
+  goal.getGoal(req.params.id, function(result) {
+    res.json(result);
+  });
+
+});
+
+router.post('/goals', function(req, res) {
+
+  goal.addGoal(req.body, function(result) {
+    res.json(result);
+  });
+
 });
 
 router.post('/login', function() {

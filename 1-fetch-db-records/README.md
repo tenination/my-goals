@@ -18,15 +18,15 @@ In this sprint you will be setting up the Database layer of your application.
 
 - [X] Run your migration to build out the database.
 
-- [ ] Write models for each entity in the database.
+- [X] Write models for each entity in the database.
   - The User model should be able to
     X- add a new user (raw usernames and passwords are fine for now)
     X- retrieve by username
   - The Goals Model should be able to
-    - add a new Goal,
-    - retrieve a Goal by id
-    - update a Goal to "completed" by id
-    - and find all Goals by user
+    X- add a new Goal,
+    X- retrieve a Goal by id
+    X- update a Goal to "completed" by id
+    X- and find all Goals by user
 
 ### Tips
 
