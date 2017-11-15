@@ -4,19 +4,19 @@ In this sprint you will be setting up the Database layer of your application.
 
 ## Bare Minimum Requirements
 
-- [ ] Use [WWW SQL Designer](http://ondras.zarovi.cz/sql/demo/) to map the entities you need to track. At minimum:
+- [X] Use [WWW SQL Designer](http://ondras.zarovi.cz/sql/demo/) to map the entities you need to track. At minimum:
   - **Users**. Usernames and passwords for authentication.
   - **Goals**. Users can keep track of multiple Goals which will eventually be completed. Goals should also contain a field for a description of the Goal (detailed notes about what the user wishes to accomplish).
   - Save a screenshot of your schema in this directory.
 
-- [ ] Complete knexfile.js in accordance with the [Knex documentation](http://knexjs.org/#knexfile):
+- [X] Complete knexfile.js in accordance with the [Knex documentation](http://knexjs.org/#knexfile):
   - it should contain connection information to db.sqlite3 (required during migrations)
 
-- [ ] Complete the migration file in ./migrations
+- [X] Complete the migration file in ./migrations
   - This file will be run when you first set up your database (and can be used to "tear down" the database if the need arises).
   - OPTIONAL: Add some seed data for the tables in seeds/populate_tables.js
 
-- [ ] Run your migration to build out the database.
+- [X] Run your migration to build out the database.
 
 - [ ] Write models for each entity in the database.
   - The User model should be able to

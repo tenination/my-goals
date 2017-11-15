@@ -1,7 +1,11 @@
 module.exports = {
 
   development: {
-    // TODO: ADD CONNECTION INFO
+    client: 'sqlite3', 
+    connection: {
+    	filename: "./db.sqlite3"
+    }
   }
 
 };
+
