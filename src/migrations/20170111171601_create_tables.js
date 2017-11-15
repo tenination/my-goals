@@ -11,6 +11,7 @@ exports.up = function(knex, Promise) {
     table.integer('user_id').unsigned();
     table.foreign('user_id').references('users.user_id');
     table.string('description');
+    table.string('iscompleted');
 
   })]);
 
