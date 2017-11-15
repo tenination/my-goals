@@ -12,6 +12,7 @@ User.findByUsername = function(username) {
     });
 };
 
+// TODO: ADD MORE MODEL FUNCTIONS HERE
 
 User.addUser = function(user) {
 	return db('users').insert({username:user.username, password:user.password})
@@ -23,6 +24,8 @@ User.addUser = function(user) {
 		});
 };
 
-// TODO: ADD MORE MODEL FUNCTIONS HERE
+
+
+
 
 module.exports = User;

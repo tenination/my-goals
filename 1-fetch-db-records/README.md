@@ -20,7 +20,7 @@ In this sprint you will be setting up the Database layer of your application.
 
 - [ ] Write models for each entity in the database.
   - The User model should be able to
-    - add a new user (raw usernames and passwords are fine for now)
+    X- add a new user (raw usernames and passwords are fine for now)
     X- retrieve by username
   - The Goals Model should be able to
     - add a new Goal,
