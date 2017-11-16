@@ -7,11 +7,13 @@ angular.module('GoalPosts', [
   'GoalPosts.Goals.Controller',
   'GoalPosts.GoalForm.Controller',
   'GoalPosts.Detail.Controller',
+  'GoalPosts.Goals.Service',
   'ngRoute'
 ])
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
     // TODO: ADD ROUTES HERE
+
 
     // TODO: Uncomment the following routes when you are ready to tackle authentication
 
