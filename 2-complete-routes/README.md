@@ -8,7 +8,7 @@ In this sprint, set up a server which will serve up the client application and p
   X- Make sure you have also set up service of modules installed via npm.
   - TIP: If you are unable to figure out how to serve Node modules, you may use CDNs to load libraries like Angular during the next sprint.
 - [X] Import models into routes.js
-- [ ] Build out the following routes:
+- [X] Build out the following routes:
 
 | method | url | description |
 | :------------- | :------------- | :------------- |
@@ -16,7 +16,7 @@ In this sprint, set up a server which will serve up the client application and p
 | *POST | /goals | Adds a new Goal to the Goals table |
 | *GET | /goals/:id | Returns details of a single Goal |
 
-- [ ] Implement at least two tests in server-spec.js. You may use the example test to guide you.
+- [?] Implement at least two tests in server-spec.js. You may use the example test to guide you.
 
 ### Tips
 - Test whether your server behaves as expected in Postman.

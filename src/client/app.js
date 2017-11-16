@@ -3,8 +3,10 @@ angular.module('GoalPosts', [
   // 'GoalPosts.Auth.Service'
   // 'GoalPosts.Auth.Controller',
 
-  // TODO: ADD YOUR MODULES HERE
-
+  // // TODO: ADD YOUR MODULES HERE
+  'GoalPosts.Goals.Controller',
+  'GoalPosts.GoalForm.Controller',
+  'GoalPosts.Detail.Controller',
   'ngRoute'
 ])
 .config(function ($routeProvider, $httpProvider) {

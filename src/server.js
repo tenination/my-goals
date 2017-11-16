@@ -8,7 +8,7 @@ var app = express();
 app.use(bodyParser.json());
   // Add static file service
 app.use(express.static(__dirname + '/client'));
-app.use(express.static(__dirname + '/node_modules'));
+app.use('/scripts', express.static(__dirname + '/node_modules'));
 app.use('/', router);
 
  //app.use()
@@ -17,7 +17,7 @@ app.use('/', router);
 // Example route. See server-spec.js for the related test.
 app.get('/zen', function(req, res) {
 	console.log('/zen is requested');
-  res.send('Master Oogway is here now');
+  res.send('There are no accidents. - Master Oogway');
 });
 
 app.listen(8080, function () {
