@@ -8,7 +8,7 @@ NOTE: Avoid spending any time on styling. Your goal is to create a functioning a
 
 ## Bare Minimum Requirements
 
-- [ ] Complete index.html to include all the scripts you require to run your app
+- [X] Complete index.html to include all the scripts you require to run your app
 - [ ] Explore the client directory and get familiar with what each file is responsible for
   - Add all the modules as dependencies in app.js
 - [ ] Complete the goals-service with $http requests.
