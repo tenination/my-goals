@@ -4,7 +4,7 @@ var Goal = {};
 
 // TODO: ADD MORE MODEL FUNCTIONS HERE
 Goal.getAllGoals = function(callback) {
-	return db.select('id', 'description').table('goals')
+	return db.select().table('goals')
 	.then(function(data) {
 		console.log('All goals in database retrieved!');
 		callback(data);

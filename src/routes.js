@@ -34,6 +34,15 @@ router.get('/goals/:id', function(req, res) {
 
 });
 
+router.post('/goals/complete', function(req, res) {
+
+  goal.updateGoal(req.body.goalId, function(result) {
+    res.json(result);
+  });
+  console.log('goals/complete request received');
+  
+});
+
 router.post('/goals', function(req, res) {
 
   goal.addGoal(req.body, function(result) {

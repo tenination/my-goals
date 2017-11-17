@@ -18,9 +18,21 @@ angular.module('GoalPosts.Goals.Controller', [])
     	//   $scope.myGoals = result;
      //  });
 
+    };
 
+    $scope.showCompleted = function(completed) {
+      console.log('completed is ', completed);
+      return completed === 'F' ? true : false;
+    };
 
-    }
+    $scope.completedClick= function(goalId) {
+      console.log('clicked on Completed button!');
+
+      Goals('/goals/complete', 'POST', {goalId:goalId}).then(function(result) {
+        console.log('SUCCESS, goal was updated');
+      });
+
+    };
 
 
 });
