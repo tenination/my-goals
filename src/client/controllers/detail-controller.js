@@ -1,16 +1,16 @@
 angular.module('GoalPosts.Detail.Controller', [])
 
 // TODO: Define a controller that will display a single Goal's detailed notes
-.controller('DetailController', function ($scope) {
+.controller('DetailController', function ($scope, $http) {
 
 
 	$http({
     method : "GET",
-    url : "/goals"
+    url : "/goals/4"
   }).then(function mySuccess(response) {
-      $scope.myWelcome = response.data;
+      $scope.myData = response.data;
     }, function myError(response) {
-      $scope.myWelcome = response.statusText;
+      $scope.myData = response.statusText;
   });
  
 

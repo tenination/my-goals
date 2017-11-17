@@ -24,6 +24,7 @@
     <div ng-controller="GoalsController">
       <ul>
         <li ng-repeat="x in myData">
+        {{x.id}} 
         {{x.description}}
         <button>Complete?</button>
         </li>
@@ -31,7 +32,16 @@
     </div>
 
     
+    <div ng-controller="DetailController">
+    <h1>Specific Goal Details</h1>
+      <p>Goal Id: {{myData[0].id}}</p>
+      <p>Goal Description: {{myData[0].description}}</p>
+      <p>Goal User Id: {{myData[0].user_id}}</p>
+    </div>
 
+    <div ng-controller="GoalFormController">
+
+    </div>
 
 
 
