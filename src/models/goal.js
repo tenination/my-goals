@@ -16,7 +16,7 @@ Goal.getAllGoals = function(callback) {
 };
 
 Goal.addGoal = function(goal, callback) {
-	return db('goals').insert({user_id: goal.user_id, description: goal.description, completed:goal.completed})
+	return db('goals').insert({user_id: goal.user_id, title: goal.title, description: goal.description, due_date: goal.due_date, completed:goal.completed})
 		.then(function(data) {
 			console.log('Goal added!', data);
 			callback(data)
