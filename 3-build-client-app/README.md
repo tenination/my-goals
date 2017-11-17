@@ -12,11 +12,11 @@ NOTE: Avoid spending any time on styling. Your goal is to create a functioning a
 - [X] Explore the client directory and get familiar with what each file is responsible for
   - Add all the modules as dependencies in app.js
 - [X] Complete the goals-service with $http requests.
-- [ ] Build out the following views and controllers:
+- [X] Build out the following views and controllers:
   X- goals.html and goals-controller.js
-  - detail.html and detail-controller.js
-  - goal-form.html and goal-form-controller.js
-- [ ] Add your front end routes in the app config.
+  X- detail.html and detail-controller.js
+  X- goal-form.html and goal-form-controller.js
+- [X] Add your front end routes in the app config.
 
 ### Tips:
 

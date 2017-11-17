@@ -4,7 +4,7 @@ angular.module('GoalPosts.Goals.Controller', [])
 .controller('GoalsController', function ($scope, Goals, $rootScope) {
 	
 
-    Goals('/goals').then(function(result) {
+    Goals('/goals', 'GET').then(function(result) {
     	console.log(result);
     	$scope.myGoals = result;
     });

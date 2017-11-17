@@ -1,8 +1,25 @@
-<form name="goal-form">
+<form name="goal-form" ng-submit="addGoal()">
   <!--
   TODO:
     - Create inputs for a Goal title, due date and description
     - Use ng-submit or ng-click directives to trigger the submit functionality
   -->
-  <p>Goal Form should be here</p>
+  <p>New Goal Form</p>
+  <input ng-model="newGoal.user_id"> Goal Title
+  <br/>
+  </input>
+  <input ng-model="newGoal.completed"> Due Date</input>
+  <br/>
+  <input ng-model="newGoal.description"> Description</input>
+  <br/>
+  <input type="submit" value="submit"></input>
+
 </form>
+<br/>
+<br/>
+
+
+<p>{{newGoal.description}}</p>
+<a href="#/">
+   Back
+</a>

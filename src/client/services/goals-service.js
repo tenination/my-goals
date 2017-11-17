@@ -3,10 +3,11 @@ angular.module('GoalPosts.Goals.Service', [])
 // TODO: Create a factory which provides $http functionality for Goals in other parts of the app.
 .factory('Goals', function ($http, $location, $window) {
 	 
-	return function(url) {
+	return function(url, method, data) {
 	  return $http({
-        method : "GET",
-        url : url
+        method : method,
+        url : url,
+        data: data
       }).then(function mySuccess(response) {
       return response.data;
       }, function myError(response) {
