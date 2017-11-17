@@ -13,6 +13,19 @@ angular.module('GoalPosts', [
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
     // TODO: ADD ROUTES HERE
+    .when("/", {
+        templateUrl : "./views/goals.html",
+        controller: "GoalsController"
+    })
+    .when("/goal-form", {
+        templateUrl : "./views/goal-form.html",
+        controller: "GoalFormController"
+
+    })
+    .when("/goal-detail", {
+        templateUrl : "./views/detail.html",
+        controller: "DetailController"
+    });
 
 
     // TODO: Uncomment the following routes when you are ready to tackle authentication

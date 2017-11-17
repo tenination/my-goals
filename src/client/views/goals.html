@@ -1,12 +1,17 @@
 <div id="goals">
   <h1>My Goals</h1>
-
-  <ol>
     <!--
     TODO:
       - Show the users goals here
       - Each Goal should be accompanied by a "Complete Goal" button
     -->
-  </ol>
+ <ul ng-repeat="goal in myGoals">
+ <a href="#goal-detail">
+	 	<li ng-click="goalClick(goal.id)">{{goal.description}}
+	 			<button>Complete Goal</button>
+	 	</li>
+</a>
 
+ </ul>
+  
 </div>
