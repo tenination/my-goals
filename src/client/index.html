@@ -5,10 +5,10 @@
     <title>GoalPosts</title>
   </head>
   <body>
-    <h1>GoalPosts</h1>
-    <h3>You should see this now</h3>
+    <h1>Goal Posts</h1>
 
-    <div ng-view></div>
+
+    <!-- <div ng-view></div> -->
 
     <script src="/scripts/angular/angular.js"></script>
     <script src="/scripts/angular-route/angular-route.js"></script>
@@ -20,5 +20,21 @@
     <script src="/services/goals-service.js"></script>
 
     <script src="/app.js"></script> 
+
+    <div ng-controller="GoalsController">
+      <ul>
+        <li ng-repeat="x in myData">
+        {{x.description}}
+        <button>Complete?</button>
+        </li>
+      </ul>
+    </div>
+
+    
+
+
+
+
+
   </body> 
 </html>
