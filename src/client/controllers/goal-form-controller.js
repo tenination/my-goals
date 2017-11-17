@@ -5,7 +5,9 @@ angular.module('GoalPosts.GoalForm.Controller', [])
 
 	$scope.newGoal = {};
 	$scope.newGoal.user_id = 1;
-	$scope.newGoal.description = 'Eat more beef';
+	$scope.newGoal.title = 'type here';
+	$scope.newGoal.description = 'type here';
+	$scope.newGoal.due_date = '12-31-18'
 	$scope.newGoal.completed = 'F';
  
 	$scope.addGoal = function() {
