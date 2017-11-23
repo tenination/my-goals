@@ -7,7 +7,7 @@
     -->
  <ul ng-repeat="goal in myGoals">
  <a href="#goal-detail">
-	 	<li ng-click="goalClick(goal.id)">{{goal.description}}
+	 	<li ng-click="goalClick(goal.id)">{{goal.title}}
 	 			<button ng-show="showCompleted(goal.completed)" ng-click="completedClick(goal.id)" >Complete Goal</button>
 	 	</li>
 </a>
@@ -16,6 +16,5 @@
  <a href="#goal-form">
  Add goal
  </a>
- 
   
 </div>

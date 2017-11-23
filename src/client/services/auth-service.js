@@ -7,8 +7,9 @@ angular.module('GoalPosts.Auth.Service', [])
       data: user
     })
     .then(function (resp) {
-      return resp.data.token;
-    });
+      console.log(resp.data);
+      return resp.data;
+    });  
   };
 
   var signup = function (user) {
@@ -18,7 +19,9 @@ angular.module('GoalPosts.Auth.Service', [])
       data: user
     })
     .then(function (resp) {
-      return resp.data.token;
+      console.log(resp.data);
+      return resp.data;
+      //return resp.data.token;
     });
   };
 

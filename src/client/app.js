@@ -13,7 +13,7 @@ angular.module('GoalPosts', [
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
     // TODO: ADD ROUTES HERE
-    .when("/", {
+    .when("/goals", {
         templateUrl : "./views/goals.html",
         controller: "GoalsController"
     })
@@ -30,7 +30,7 @@ angular.module('GoalPosts', [
 
     // TODO: Uncomment the following routes when you are ready to tackle authentication
 
-    .when('/signin', {
+    .when('/', {
       templateUrl: 'views/login.html',
       controller: 'AuthController'
     })

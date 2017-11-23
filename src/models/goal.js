@@ -15,11 +15,12 @@ Goal.getAllGoals = function(callback) {
 	});
 };
 
-Goal.addGoal = function(goal, callback) {
-	return db('goals').insert({user_id: goal.user_id, title: goal.title, description: goal.description, due_date: goal.due_date, completed:goal.completed})
+
+Goal.addGoal = function(user_id, goal, callback) {
+	return db('goals').insert({user_id: user_id, title: goal.title, description: goal.description, due_date: goal.due_date, completed:goal.completed})
 		.then(function(data) {
 			console.log('Goal added!', data);
-			callback(data)
+			callback(data);
 		})
 		.catch(function(err) {
 			console.error(err);
@@ -49,13 +50,15 @@ Goal.updateGoal = function(goalId) {
 	});
 };
 
-Goal.findUserGoals = function(userId) {
+Goal.findUserGoals = function(userId, callback) {
 	return db('goals').where('user_id', userId)
-	.then(function() {
-		console.log('All goals for user retrieved!')
+	.then(function(data) {
+		console.log('All goals for user retrieved!');
+		callback(data);
 	})
 	.catch(function(err) {
 		console.error(err);
+		callback(err);
 	});
 };
 

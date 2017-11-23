@@ -10,15 +10,19 @@ angular.module('GoalPosts.Auth.Controller', [])
         $location.path('/goals');
       })
       .catch(function (error) {
+        console.log('Login unsuccessful');
         console.error(error);
       });
   };
 
+
+
   $scope.signup = function () {
     Auth.signup($scope.user)
       .then(function (token) {
-        $window.localStorage.setItem('com.gp', token);
+        console.log('token is ', token);
         $location.path('/goals');
+        $window.localStorage.setItem('com.gp', token);
       })
       .catch(function (error) {
         console.error(error);
