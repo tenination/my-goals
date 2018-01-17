@@ -58,8 +58,4 @@ User.addUser = function(user, callback) {
 		});
 };
 
-
-
-
-
 module.exports = User;
