@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "test": "echo server-spec.js",
-    "start" : "node server.js"
+    "start": "node server.js"
   },
   "author": "Joseph Martin <jpranaymartin@gmail.com>",
   "license": "ISC",
