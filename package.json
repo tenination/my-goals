@@ -2,9 +2,8 @@
   "name": "solo-project",
   "version": "1.0.0",
   "description": "Hack Reactor Solo Project",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo server-spec.js",
     "start": "node server.js"
   },
   "author": "Joseph Martin <jpranaymartin@gmail.com>",
