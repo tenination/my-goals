@@ -43,8 +43,6 @@ User.doesUsernameExist = function(username, callback) {
     });
 };
 
-
-
 // TODO: ADD MORE MODEL FUNCTIONS HERE
 
 User.addUser = function(user, callback) {
