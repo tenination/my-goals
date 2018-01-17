@@ -4,7 +4,8 @@
   "description": "Hack Reactor Solo Project",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo server-spec.js"
+    "test": "echo server-spec.js",
+    "start" : "node src/server.js"
   },
   "author": "Joseph Martin <jpranaymartin@gmail.com>",
   "license": "ISC",
