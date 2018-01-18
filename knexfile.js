@@ -1,6 +1,6 @@
 module.exports = {
 
-  production: {
+  development: {
     client: 'sqlite3', 
     connection: {
     	filename: "./db.sqlite3"
