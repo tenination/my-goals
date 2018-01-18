@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Monoton|Pacifico|Supermercado+One");
+
+body {
+	background-image: url(http://arilikeairy.org/wordpress/wp-content/uploads/2015/01/Goals.jpg);
+	background-size: 1273px 700px;
+	background-repeat: no-repeat;
+
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+
+	height:100vh;
+
+	font-family: 'Supermercado One',serif;
+}
+
+body #main {
+	font-size: 70px;
+	font-family: 'Pacifico', serif;
+}
+
+#login {
+	background: rgba(255, 255, 255, 0.5) /* Green background with 30% opacity */
+}
+
+#login h1 {
+	text-align:center;
+	font-family: 'Monoton', serif;
+}
+
+#login a {
+	margin-left:10px;
+}
+
