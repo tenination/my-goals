@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=ABeeZee|Lobster|Rubik|Monoton|Pacifico|Supermercado+One");
 
 body {
-	background-image: url(http://arilikeairy.org/wordpress/wp-content/uploads/2015/01/Goals.jpg);
-	background-size: 1273px 700px;
+	background-image: url('goals.jpg');
+	background-size: cover;
 	background-repeat: no-repeat;
 
 	display: flex;
