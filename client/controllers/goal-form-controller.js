@@ -5,9 +5,9 @@ angular.module('GoalPosts.GoalForm.Controller', [])
 
 	$scope.newGoal = {};
 	$scope.newGoal.user_id = 1;
-	$scope.newGoal.title = 'type here';
-	$scope.newGoal.description = 'type here';
-	$scope.newGoal.due_date = '12-31-18'
+	$scope.newGoal.title = '';
+	$scope.newGoal.description = '';
+	$scope.newGoal.due_date = ''
 	$scope.newGoal.completed = 'F';
  
 	$scope.addGoal = function() {
@@ -15,6 +15,7 @@ angular.module('GoalPosts.GoalForm.Controller', [])
 	  Goals('/goals', 'POST', $scope.newGoal).then(function(result) {
 	   
 	   console.log('POST REQUEST SUCCESS!')
+	   window.location = '#/goals'
 	  });
 		
 	}
