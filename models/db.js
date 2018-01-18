@@ -2,7 +2,7 @@ var config = require('../knexfile.js');
 var env = 'production';  
 var knex = require('knex')(config[env]);
 
-knex.schema.createTableIfNotExists('goals', function (table) {
+return knex.schema.createTableIfNotExists('goals', function (table) {
     table.increments();
     table.integer('user_id').unsigned();
     table.foreign('user_id').references('users.user_id');
