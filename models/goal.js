@@ -1,8 +1,6 @@
 var db = require('./db');
-
 var Goal = {};
 
-// TODO: ADD MORE MODEL FUNCTIONS HERE
 Goal.getAllGoals = function(callback) {
 	return db.select().table('goals')
 	.then(function(data) {
@@ -14,7 +12,6 @@ Goal.getAllGoals = function(callback) {
 		callback(err);
 	});
 };
-
 
 Goal.addGoal = function(user_id, goal, callback) {
 	return db('goals').insert({user_id: user_id, title: goal.title, description: goal.description, due_date: goal.due_date, completed:goal.completed})
@@ -63,5 +60,3 @@ Goal.findUserGoals = function(userId, callback) {
 };
 
 module.exports = Goal;
-
-

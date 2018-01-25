@@ -1,6 +1,4 @@
 angular.module('GoalPosts.Goals.Service', [])
-
-// TODO: Create a factory which provides $http functionality for Goals in other parts of the app.
 .factory('Goals', function ($http, $location, $window) {
 	 
 	return function(url, method, data) {
@@ -14,5 +12,4 @@ angular.module('GoalPosts.Goals.Service', [])
         return response.statusText;
       });
 	}
-
 });

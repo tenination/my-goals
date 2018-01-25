@@ -1,5 +1,4 @@
 var db = require('./db');
-
 var User = {};
 
 User.findUserId = function(username, callback) {
@@ -42,8 +41,6 @@ User.doesUsernameExist = function(username, callback) {
       callback(err);
     });
 };
-
-// TODO: ADD MORE MODEL FUNCTIONS HERE
 
 User.addUser = function(user, callback) {
 	return db('users').insert({username:user.username, password:user.password})

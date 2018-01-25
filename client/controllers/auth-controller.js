@@ -15,8 +15,6 @@ angular.module('GoalPosts.Auth.Controller', [])
       });
   };
 
-
-
   $scope.signup = function () {
     Auth.signup($scope.user)
       .then(function (token) {

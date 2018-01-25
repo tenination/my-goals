@@ -2,7 +2,6 @@ var test    = require('tape');
 var request = require('supertest');
 var app     = require('./server.js');
 
-// This is an example test. Use it to write your own endpoint tests below.
 test('GET /goals', function (assert) {
   request(app)
     .get('/goals')
@@ -15,7 +14,3 @@ test('GET /goals', function (assert) {
       assert.end();
     });
 });
-
-
-
-// TODO: YOUR TESTS HERE

@@ -1,25 +1,18 @@
 <div id="goals">
   <h1>My Goals</h1>
-    <!--
-    TODO:
-      - Show the users goals here
-      - Each Goal should be accompanied by a "Complete Goal" button
-    -->
- <ul ng-repeat="goal in myGoals">
- <a href="#goal-detail">
-	 	<li ng-click="goalClick(goal.id)">{{goal.title}}
-	 			<button ng-show="showCompleted(goal.completed)" ng-click="completedClick(goal.id)" >Complete Goal</button>
+  <ul ng-repeat="goal in myGoals">
+  <a href="#goal-detail">
+	  <li ng-click="goalClick(goal.id)">{{goal.title}}
+	 	  <button ng-show="showCompleted(goal.completed)" ng-click="completedClick(goal.id)" >Complete Goal</button>
 	 	</li>
-</a>
-
- </ul>
- <a href="#goal-form">
- Add goal
- </a>
- <div>
- <a href="#/">
- Logout
- </a>
- </div>
-  
+  </a>
+  </ul>
+ 		<a href="#goal-form">
+      Add goal
+    </a>
+   <div>
+     <a href="#/">
+       Logout
+     </a>
+   </div>
 </div>

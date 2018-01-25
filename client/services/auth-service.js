@@ -21,7 +21,6 @@ angular.module('GoalPosts.Auth.Service', [])
     .then(function (resp) {
       console.log(resp.data);
       return resp.data;
-      //return resp.data.token;
     });
   };
 

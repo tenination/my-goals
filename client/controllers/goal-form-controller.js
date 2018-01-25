@@ -1,6 +1,5 @@
 angular.module('GoalPosts.GoalForm.Controller', [])
 
-// TODO: Define a controller that will allow the user to create a new Goal
 .controller('GoalFormController', function ($scope, $http, Goals) {
 
 	$scope.newGoal = {};
@@ -13,8 +12,7 @@ angular.module('GoalPosts.GoalForm.Controller', [])
 	$scope.addGoal = function() {
 		console.log('Form Submitted!');
 	  Goals('/goals', 'POST', $scope.newGoal).then(function(result) {
-	   
-	   console.log('POST REQUEST SUCCESS!')
+	    console.log('POST REQUEST SUCCESS!')
 	  });
 		
 	}
